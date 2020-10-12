@@ -1,13 +1,258 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: 'Open San', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
 }
+
+main {
+  background-color: #fefefe;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.page {
+  display: flex;
+}
+
+#navbar {
+  border: solid 2px darkgrey;
+  margin: 15px;
+  background-color: #efefef;
+  border-radius: 7px;
+}
+
+#nav-container {
+  width: 250px;
+}
+
+#navbar header {
+  text-align: center;
+  margin: 20px;
+}
+
+header {
+  font-size: 34px;
+  font-weight: 100;
+}
+
+#navbar ul {
+  padding: 0;
+  border-top: solid 2px grey;
+}
+
+#navbar li {
+  list-style-type: none;
+  padding: 10px 20px;
+  transition: 0.1s;
+  text-align: left;
+  margin: 0;
+  padding: 6px 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a {
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+  width: 100%;
+}
+
+#conrad-logo {
+  margin: 25px 0 0 15px;
+  width: 30%;
+}
+
+.tile {
+  font-size: 18px;
+  margin: 10px;
+  padding-bottom: 5px;
+  box-shadow: 3px 3px 10px 5px #ddd;
+  border-radius: 10px;
+}
+
+.growing-animation {
+  display: block;
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.growing-animation:hover {
+  transform: scale(1.03);
+}
+
+.tile-heading {
+  font-size: 20px;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.dashboard {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-self: start;
+  width: calc(100vw - 330px);
+}
+
+.tile ul {
+  list-style-type: none;
+  margin: 5px;
+  padding: 0px 10px;
+}
+
+.icon-margin {
+  margin: auto 7px;
+}
+
+.blue {
+  color: #0099DD;
+}
+
+.tile-button {
+  float: right;
+  font-size: 130%;
+  border: none;
+  background-color: inherit;
+}
+
+.tile-button i {
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+}
+
+.tile-button:focus {
+  outline: none;
+}
+
+.tile-button:active {
+  transform: scale(0.95);
+}
+
+.tile-button:hover {
+  cursor: pointer;
+}
+
+.page {
+  display: flex;
+}
+
+.link {
+  display: block;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.1s;
+}
+
+.link .icon-forward-animation {
+  transform: translateZ(0);
+  transition-duration: 0.1s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  margin-right: 5px;
+}
+
+.link:hover .icon-forward-animation, .link:focus .icon-forward-animation, .link:active .icon-forward-animation {
+  transform: translateX(4px);
+}
+
+.textbox{
+  font-size: 100%;
+  border: none;
+  border-bottom: 1px solid #0099DD;
+  margin: 10px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.textbox:focus {
+  outline: none;
+}
+
+/* get animation to work */
+.hvr-underline-from-center {
+display: block;
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+position: relative;
+overflow: hidden;
+}
+.hvr-underline-from-center::before {
+content: "";
+position: absolute;
+z-index: -1;
+left: 51%;
+right: 51%;
+bottom: 0;
+background: #0099DD;
+height: 3px;
+transition-property: left, right;
+transition-duration: 0.3s;
+transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover::before, .hvr-underline-from-center:focus::before, .hvr-underline-from-center:active::before {
+  left: 0;
+  right: 0;
+}
+
+.float-left {
+  width: 47%;
+  float: left;
+}
+
+.float-right {
+  width: 47%;
+  float: right;
+}
+
+/* phone mode */
+@media only screen and (max-width: 660px) {
+  .page {
+    flex-direction: column-reverse;
+  }
+  #nav-container {
+    width: 100%;
+  }
+  #conrad-logo {
+    width: 50%;
+  }
+  .dashboard {
+    width: 95%;
+    margin: auto;
+  }
+/*  rework navbar for phone mode, make it more mobile friendly  */
+  #navbar ul {
+    text-align: center;
+  }
+  #navbar li {
+    display: inline-block;
+  }
+  #navbar li i {
+    display: none;
+  }
+}
+
+/* tablet mode  */
+@media only screen and (max-width: 1000px) {
+  .dashboard {
+    grid-template-columns: 100%;
+  }
+}
+
