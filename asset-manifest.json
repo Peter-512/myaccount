@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/randomquotemachine/static/css/main.7a6939cd.chunk.css",
-    "main.js": "/randomquotemachine/static/js/main.bc6f8627.chunk.js",
-    "main.js.map": "/randomquotemachine/static/js/main.bc6f8627.chunk.js.map",
-    "runtime-main.js": "/randomquotemachine/static/js/runtime-main.29ae4a45.js",
-    "runtime-main.js.map": "/randomquotemachine/static/js/runtime-main.29ae4a45.js.map",
-    "static/js/2.dddd10af.chunk.js": "/randomquotemachine/static/js/2.dddd10af.chunk.js",
-    "static/js/2.dddd10af.chunk.js.map": "/randomquotemachine/static/js/2.dddd10af.chunk.js.map",
-    "index.html": "/randomquotemachine/index.html",
-    "precache-manifest.e86ce8075186fa8bd7628e4df5491192.js": "/randomquotemachine/precache-manifest.e86ce8075186fa8bd7628e4df5491192.js",
-    "service-worker.js": "/randomquotemachine/service-worker.js",
-    "static/css/main.7a6939cd.chunk.css.map": "/randomquotemachine/static/css/main.7a6939cd.chunk.css.map",
-    "static/js/2.dddd10af.chunk.js.LICENSE.txt": "/randomquotemachine/static/js/2.dddd10af.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/randomquotemachine/static/media/logo.5d5d9eef.svg"
+    "main.css": "/myaccount/static/css/main.5f361e03.chunk.css",
+    "main.js": "/myaccount/static/js/main.339ef721.chunk.js",
+    "main.js.map": "/myaccount/static/js/main.339ef721.chunk.js.map",
+    "runtime-main.js": "/myaccount/static/js/runtime-main.2964b40f.js",
+    "runtime-main.js.map": "/myaccount/static/js/runtime-main.2964b40f.js.map",
+    "static/js/2.dddd10af.chunk.js": "/myaccount/static/js/2.dddd10af.chunk.js",
+    "static/js/2.dddd10af.chunk.js.map": "/myaccount/static/js/2.dddd10af.chunk.js.map",
+    "index.html": "/myaccount/index.html",
+    "precache-manifest.049ef0e77b546bb6238c348e90770f07.js": "/myaccount/precache-manifest.049ef0e77b546bb6238c348e90770f07.js",
+    "service-worker.js": "/myaccount/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/myaccount/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.dddd10af.chunk.js.LICENSE.txt": "/myaccount/static/js/2.dddd10af.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/myaccount/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.29ae4a45.js",
+    "static/js/runtime-main.2964b40f.js",
     "static/js/2.dddd10af.chunk.js",
-    "static/css/main.7a6939cd.chunk.css",
-    "static/js/main.bc6f8627.chunk.js"
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.339ef721.chunk.js"
   ]
 }
